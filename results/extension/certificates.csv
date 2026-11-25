@@ -1,0 +1,5 @@
+seed,family,case_id,candidate_id,trials,successes,lower_bound,alpha_per_candidate,certified
+83,LogisticRegression,308,12,400,400,0.9925386444712004,0.05,True
+83,LogisticRegression,523,7,400,400,0.9925386444712004,0.05,True
+83,RandomForest,381,8,400,400,0.9925386444712004,0.05,True
+83,RandomForest,213,10,400,400,0.9925386444712004,0.05,True

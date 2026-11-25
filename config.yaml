@@ -1,0 +1,15 @@
+seed: 42
+ensemble_size: 15
+candidate_count: 12
+evaluation_cases: 30
+perturbations: 100
+perturbation_fraction: 0.02
+mutable:
+  ApplicantIncome: {direction: increase, cost: 1.0}
+  CoapplicantIncome: {direction: increase, cost: 1.5}
+  LoanAmount: {direction: decrease, cost: 1.0}
+reliability:
+  max_uncertainty: 0.15
+  min_stability: 0.90
+  max_proximity: 0.50
+  max_sparsity: 3

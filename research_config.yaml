@@ -1,0 +1,18 @@
+# Fixed before running the extension; these values are not fit to held-out results.
+seeds: [42, 17, 83]
+model_families: [LogisticRegression, RandomForest]
+bootstrap_members: 5
+audit_members: 2
+trees: 150
+budgets: [0.25, 0.50, 1.00]
+max_relative_change: 0.50
+sobol_power: 8
+axis_steps: 20
+shortlist_per_budget: 8
+screen_trials: 100
+certificate_trials: 400
+audit_trials: 500
+target_success: 0.90
+alpha: 0.05
+execution_fraction: [0.80, 1.00]
+max_probability_std: 0.15

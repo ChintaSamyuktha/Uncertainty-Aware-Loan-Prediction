@@ -1,0 +1,13 @@
+numpy>=2,<3
+scipy>=1.13,<2
+pandas>=2.2,<3
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+shap>=0.51,<0.52
+dice-ml==0.12
+streamlit==1.41.1
+protobuf==4.25.3
+PyYAML>=6,<7
+joblib>=1.4,<2
+pytest>=8,<10
+pypdf>=6,<7

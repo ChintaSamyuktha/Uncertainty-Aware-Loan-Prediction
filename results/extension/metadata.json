@@ -1,0 +1,81 @@
+{
+  "settings": {
+    "seeds": [
+      42,
+      17,
+      83
+    ],
+    "model_families": [
+      "LogisticRegression",
+      "RandomForest"
+    ],
+    "bootstrap_members": 5,
+    "audit_members": 2,
+    "trees": 150,
+    "budgets": [
+      0.25,
+      0.5,
+      1.0
+    ],
+    "max_relative_change": 0.5,
+    "sobol_power": 8,
+    "axis_steps": 20,
+    "shortlist_per_budget": 8,
+    "screen_trials": 100,
+    "certificate_trials": 400,
+    "audit_trials": 500,
+    "target_success": 0.9,
+    "alpha": 0.05,
+    "execution_fraction": [
+      0.8,
+      1.0
+    ],
+    "max_probability_std": 0.15
+  },
+  "policy": {
+    "seed": 42,
+    "ensemble_size": 15,
+    "candidate_count": 12,
+    "evaluation_cases": 30,
+    "perturbations": 100,
+    "perturbation_fraction": 0.02,
+    "mutable": {
+      "ApplicantIncome": {
+        "direction": "increase",
+        "cost": 1.0
+      },
+      "CoapplicantIncome": {
+        "direction": "increase",
+        "cost": 1.5
+      },
+      "LoanAmount": {
+        "direction": "decrease",
+        "cost": 1.0
+      }
+    },
+    "reliability": {
+      "max_uncertainty": 0.15,
+      "min_stability": 0.9,
+      "max_proximity": 0.5,
+      "max_sparsity": 3
+    }
+  },
+  "elapsed_seconds": 62.292019844055176,
+  "scope": "Conditional Monte Carlo certificates per applicant/run across reported budgets; not lender outcome guarantees",
+  "original_evaluation_already_seen": true,
+  "external_validation": false,
+  "file_sha256": {
+    "train.csv": "8c2cc67a13279ec746b15f76f14e8503154274ef7f221d2437033b4407c80ca8",
+    "research_config.yaml": "5ef74e37c6028ee4973e22a3023172ff034311c6205e6839715c3b458b5e61d0",
+    "config.yaml": "855d18dc45d6b24920535d7e002eb66651343e8abe08655a963fc312afd82294",
+    "src/budgeted_recourse.py": "6ba965764bb09325440cd3ea87ab06b78e26ff892865aadfef310bc722e6ffaf",
+    "run_research_extension.py": "a6b74a1b52625cda857350af228cda5e852c1d515b966a35651e8df7d7d04958"
+  },
+  "versions": {
+    "numpy": "2.0.0",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "joblib": "1.4.2"
+  }
+}

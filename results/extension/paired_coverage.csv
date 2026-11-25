@@ -1,0 +1,7 @@
+family,budget,evaluated,nominal_only,both,certified_only,neither
+LogisticRegression,0.25,70,2,0,0,68
+LogisticRegression,0.5,70,1,2,0,67
+LogisticRegression,1.0,70,2,2,0,66
+RandomForest,0.25,70,2,1,0,67
+RandomForest,0.5,70,1,2,0,67
+RandomForest,1.0,70,1,2,0,67
